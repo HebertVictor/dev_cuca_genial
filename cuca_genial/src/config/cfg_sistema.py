@@ -58,3 +58,20 @@ BACKGROUND_COLOR_BLUE = '#282c4c'
 
 # Sons do sistema
 BEEP = '\a'
+
+# Tela de créditos do creditos.py
+STR_TURMA = ('''Andreas Gunther
+Antônio José
+Beatriz Fontes
+Daniel Caua
+Fábio Gabriel
+Flavio Callega
+Gustavo Gabriel
+Hebert Victor
+Josiete De Souza
+Luana Correia
+Luiz Lima
+Maria Eduarda
+Vitória Klinkoski''')
+STR_ORIENTADOR = '''Pierre Freire
+'''
