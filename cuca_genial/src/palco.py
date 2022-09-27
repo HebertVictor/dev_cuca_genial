@@ -19,7 +19,7 @@ pontos = 0
                 # size=(200,40), background_color='white')]], border_width=0 ,title_color='white', font=("Arial",15))]])
 
 
-framezinho = sg.Column([[sg.Frame(STR_FRAME_TITLE_PALCO, 
+frame_placar = sg.Column([[sg.Frame(STR_FRAME_TITLE_PALCO, 
                      [[sg.Column([[sg.Push(background_color=COLOR_GOLD),
                      sg.Image(source = PALCO_USER_IMAGE,background_color=COLOR_GOLD, size = (85,90)), #imagem do jogador
                     sg.Text(player_name, key=('-PLAYER-'),background_color=COLOR_GOLD,  text_color= COLOR_DARKBLUE,font=("Arial",20)),
@@ -35,9 +35,8 @@ layout = [
            sg.Text(size=(5, 1), font=('Helvetica', 40), key='-OUTPUT-'), # Layout do Counter
            #sg.Text(STR_TITLE_PALCO, size=(13,1), font=("Arial",60), pad=(50)),
            sg.Push(),sg.Image(source = PALCO_LOGO_IMAGE, size = (400,225)), sg.Push(),#imagem de logo
-
-           framezinho,
-           #frame_placar,
+             
+           frame_placar,
            ],
           # [sg.Push(),sg.Text(pontos, key=('-PONTOS-'), background_color='white', text_color=COLOR_DARKBLUE,font=("Arial",25))], #pontuação
 
