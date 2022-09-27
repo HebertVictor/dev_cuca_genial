@@ -37,6 +37,7 @@ while True:
     
     # Abrir tela de jogo
     if event == 'JOGAR':
+        player_name = player_name[0:5]
         window.close()
         from palco import *
         

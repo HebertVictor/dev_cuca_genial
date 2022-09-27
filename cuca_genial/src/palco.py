@@ -20,12 +20,13 @@ pontos = 0
 
 
 framezinho = sg.Column([[sg.Frame(STR_FRAME_TITLE_PALCO, 
-                     [[sg.Column([[sg.Push(background_color=COLOR_GOLD),sg.Image(source = PALCO_USER_IMAGE,background_color=COLOR_GOLD, size = (70,70)), #imagem do jogador
-                    sg.Text(player_name, key=('-PLAYER-'),background_color=COLOR_GOLD, border_width=0,text_color= COLOR_DARKBLUE,font=("Arial",15)),],
-                    [sg.Push(background_color=COLOR_GOLD),sg.Text(pontos, key=('-PONTOS-'), background_color=COLOR_GOLD, text_color=COLOR_DARKBLUE,font=("Arial",25)), sg.Push(background_color=COLOR_GOLD)],
-                    
-                    ],
-                 size=(200,150), background_color=COLOR_GOLD)]], border_width=10 , background_color='white', title_color=COLOR_DARKBLUE, font=("Arial",15))]])
+                     [[sg.Column([[sg.Push(background_color=COLOR_GOLD),
+                     sg.Image(source = PALCO_USER_IMAGE,background_color=COLOR_GOLD, size = (85,90)), #imagem do jogador
+                    sg.Text(player_name, key=('-PLAYER-'),background_color=COLOR_GOLD,  text_color= COLOR_DARKBLUE,font=("Arial",20)),
+                    sg.Push(background_color=COLOR_GOLD),sg.Text(pontos, key=('-PONTOS-'), background_color=COLOR_GOLD, text_color=COLOR_DARKBLUE,font=("Arial",25)), 
+                    sg.Push(background_color=COLOR_GOLD)
+                    ],],
+                 size=(350,90), background_color=COLOR_GOLD)]], border_width=0 , title_color='white', font=("Arial",10))]])
 
 
 # layout
@@ -115,6 +116,6 @@ while True:
         window['-2-'].update(respostas[indice][2])
         window['-3-'].update(respostas[indice][3])
      
-    #  Fechar janela 
+    #  Fechar janela
     if event == sg.WIN_CLOSED or event == 'Sair': 
         break
