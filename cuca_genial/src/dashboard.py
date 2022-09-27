@@ -23,6 +23,8 @@ layout = [ #[sg.Push(),sg.Text(STR_NAME_PROJECT,
             [sg. Push(), sg.InputText(default_text='GUEST', justification= 'center', background_color='white', text_color=COLOR_GOLD , key='-CHECK_USER-', size=(15,1),font=("Arial",30),pad=(30)),sg.Push()],
 
             [sg.Push(),sg.Button('JOGAR',button_color=(COLOR_GOLD, COLOR_BLUE),font=("Arial",30)), sg.Push()],
+            
+            [sg.Button('Créditos',button_color=(COLOR_GOLD, COLOR_BLUE),font=("Arial",15), key='-CREDITS-'), sg.Push()],
         ]
 
 window = sg.Window(STR_WINDOW_TITLE_DASHBOARD, layout, size=(900,500))
@@ -37,6 +39,10 @@ while True:
     if event == 'JOGAR':
         window.close()
         from palco import *
+        
+    # Abrir os créditos
+    if event == '-CREDITS-':
+        from creditos import *
 
     # Fechar janela    
     if event == sg.WIN_CLOSED: 
