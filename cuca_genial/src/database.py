@@ -4,7 +4,7 @@
 # Criado em: 19/09/2022
 
 
-questões = [
+questoes = [
     ['Qual a capital do Brasil?'],
     ['Qual a capital da Bahia?'],
     ['De onde é a invenção do chuveiro elétrico?'],
@@ -18,6 +18,3 @@ respostas = [
     ['França', 'Inglaterra', 'Brasil', 'Austrália', 2],
     ['Numeros','Imagens','Pedras','Letras', 3]
 ]
-
-# Indice localizador 
-indice=0
